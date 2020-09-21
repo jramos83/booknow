@@ -1,0 +1,14 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    generate-ddl: true
+
+reservation:
+  slot:
+    hours: 2
+  opening:
+    time: 1100
+  closing:
+    time: 1900
