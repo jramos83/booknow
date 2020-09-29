@@ -1,7 +1,6 @@
 package com.igreendata.booknow.service;
 
 import com.igreendata.booknow.domain.ReservationTable;
-import com.igreendata.booknow.repository.ReservationRepository;
 import com.igreendata.booknow.repository.ReservationTableRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
