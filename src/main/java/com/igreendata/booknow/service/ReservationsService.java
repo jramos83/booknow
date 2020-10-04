@@ -9,6 +9,7 @@ import com.igreendata.booknow.exception.TimeConflictExistsException;
 import com.igreendata.booknow.repository.ReservationRepository;
 import com.igreendata.booknow.repository.ReservationTableRepository;
 import com.igreendata.booknow.repository.TableLockRepository;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,18 +24,15 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
+@AllArgsConstructor
 public class ReservationsService {
 
-    @Autowired
     private ReservationRepository reservationRepository;
 
-    @Autowired
     private ReservationTableRepository reservationTableRepository;
 
-    @Autowired
     private TableLockRepository tableLockRepository;
 
-    @Autowired
     private ReservationConfiguration reservationConfiguration;
 
     public List<Reservation> findAllReservations() {
